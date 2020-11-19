@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book list</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script src="https://kit.fontawesome.com/c3d44d5c03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="title">
+        <i class="fas fa-shopping-cart"></i>
+        My<shopping class="logo_name">Shopping</span>List
+        </h1>
+    </div>
+    <form id="shopping-form">
+        <div class="form-group">
+            <label for="title">Name</label>
+            <input type="text" id=name class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="title">Place</label>
+            <input type="text" id=place class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="title">Cost</label>
+            <input type="text" id=cost class="form-control">
+        </div>
+        <input type="submit" value="Add list" 
+        class="addList">
+    </form>
+    <table class="resultTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Cost</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="shopping-list"></tbody>
+    </table>
+</body>
+</html>
